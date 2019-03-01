@@ -21,10 +21,9 @@
 
 
 .ModalContainer {
-    width: 500px;
+    width: 100vw;
     /*top:0;*/
     transition: 0.5s all ease;
-    background-color: #ffffff;
     /*position: absolute;*/
     z-index: 2;
     margin: auto;
@@ -36,7 +35,8 @@
 }
 
 .ModalContent {
-    height: calc(100vh - 60px);
+    height: calc(100vh - 56px);
+    overflow-y: auto;
 }
 
 .DrawerOpen {

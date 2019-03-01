@@ -32,7 +32,8 @@ class Email extends Component {
 
     render() {
         return (
-            <div className={classes.Wrapper}>
+            <div className={[classes.Wrapper, classes.Mobile].join(' ')}
+                 style={{display:`${this.props.show && 'block'}`, ...this.props.style}}>
                 <div className="container" style={{paddingTop: 16, paddingBottom: 16}}>
                     <h5 style={{
                         borderBottom: '1px solid #dfe2e5',
@@ -41,7 +42,8 @@ class Email extends Component {
                         textAlign: 'center'}}>
                         Request more information
                     </h5>
-                    <div>Sales center</div>
+                    <div style={{fontWeight:700}}>LIV Condos</div>
+                    <div style={{color:'var(--gray)', fontSize: 14,marginBottom: 8}}>Sales center</div>
                     <div>
                         <form onSubmit={this.handleSubmit}>
                             <div className="form-section">

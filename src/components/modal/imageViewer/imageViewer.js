@@ -1,7 +1,7 @@
 import React from 'react'
 import classes from './imageViewer.module.css'
-import {ArrowLeftIcon, ArrowRightIcon, CloseIcon} from "../icons/icons";
-import ImgH from '../../img/building-image-1.jpg'
+import {ArrowLeftIcon, ArrowRightIcon, CloseIcon} from "../../icons/icons";
+import ImgH from '../../../img/building-image-1.jpg'
 
 
 export default ({ children, closeModal, closeProtectModal, render }) => {

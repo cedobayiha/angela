@@ -12,3 +12,17 @@
 
 }
 
+.NavLinks {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.NavLinks a {
+    color: var(--gray-level-two);
+}
+
+.NavLinks a:hover {
+    color: #333;
+    text-decoration: none;
+}
+

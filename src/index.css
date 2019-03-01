@@ -1,5 +1,6 @@
 :root {
-  --main-gray-border: #dfe2e5
+  --main-gray-border: #dfe2e5;
+  --gray-level-two: #73787d
 }
 *{
   box-sizing: border-box;

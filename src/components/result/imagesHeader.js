@@ -1,6 +1,6 @@
 import React from 'react'
 import classes from './imagesHeader.module.css'
-import ImageViewerModal from '../modal/imageViewer'
+import ImageViewerModal from '../modal/imageViewer/imageViewer'
 import Img1 from '../../img/building-image-1.jpg'
 
 const ImagesHeader = ()=> (
