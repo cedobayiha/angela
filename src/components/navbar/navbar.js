@@ -6,7 +6,7 @@ import { MenuIcon } from '../icons/icons'
 class Navbar extends Component {
     render() {
         return (
-            <div>
+            <div style={{borderBottom:" 1px solid #dfe2e5"}}>
                 <nav>
                     <div className="container" style={{
                         display: "flex",

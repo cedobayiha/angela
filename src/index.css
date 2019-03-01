@@ -1,4 +1,6 @@
-
+:root {
+  --main-gray-border: #dfe2e5
+}
 *{
   box-sizing: border-box;
 }

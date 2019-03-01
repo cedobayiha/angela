@@ -1,0 +1,12 @@
+.NavWrap {
+    border-bottom:1px solid #dfe2e5;
+}
+
+.NavWrap a.NavLinkItem {
+    color:inherit !important;
+}
+
+.NavWrap a.Active {
+    color:var(--primary) !important;
+    border-bottom: 2px solid var(--primary);
+}

@@ -1,0 +1,25 @@
+.Container {
+    position:   fixed;
+    bottom:0;
+    left:0;
+    width:100vw;
+    height: 70px;
+    background-color: white;
+    z-index: 788;
+    border-top: 1px solid var(--main-gray-border);
+}
+
+@media (min-width: 992px) {
+    .Container {
+display: none !important;
+    }
+}
+
+.Container button {
+    height: 50px;
+    width: 48%;
+}
+
+.Website {
+
+}
