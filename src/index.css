@@ -1,3 +1,8 @@
+
+*{
+  box-sizing: border-box;
+}
+
 body {
   background-color: #fff;
   margin: 0;
@@ -7,6 +12,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+    line-height: 1.5;
+    color: #3c4044;
 }
 
 code {

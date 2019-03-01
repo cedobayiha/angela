@@ -6,11 +6,15 @@ import ResultPage from './routes/result'
 import Footer from './components/footer/footer'
 
 
+
 class App extends Component {
   render() {
+    console.log("ouais" )
     return (
       <div>
         <Navbar />
+
+        
         <Route exact path="/" component={HomePage} />
         <Route path="/result" component={ResultPage} />
 
