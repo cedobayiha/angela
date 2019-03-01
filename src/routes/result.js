@@ -1,11 +1,11 @@
 import React from 'react'
 import Subnav from '../components/result/subnav'
-
+import ImagesHeader from '../components/result/imagesHeader'
 
 const Result = () => (
     <div>
         <Subnav/>
-        <div className="space20"/>
+        <ImagesHeader/>
     </div>
 )
 

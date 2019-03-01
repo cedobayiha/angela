@@ -1,0 +1,76 @@
+.HeaderContainer {
+    height:351px;
+    overflow: hidden;
+}
+
+.BigImage {
+    height:351px;
+    border-left:3px solid white;
+    background-position: center;
+    background-size: cover;
+
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .BigImage {
+        min-width: 500px;
+    }
+}
+
+@media (min-width: 992px) {
+    .BigImage {
+        min-width: 600px;
+    }
+}
+
+.SmallImgsContainer {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .SmallImgsContainer {
+        display: flex;
+    }
+}
+
+@media (max-width: 767px) {
+    .BigImage {
+        width: 100%;
+        height: 221px;
+        filter: blur(7px);
+        transform: scale(1.05);
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .HeaderContainer {
+        height:221px
+    }
+}
+
+
+
+.MobileContainer {
+    height: 221px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left:0;
+}
+
+@media (min-width: 768px) {
+    .MobileContainer {
+        display: none;
+    }
+}
+
+.ImgItem {
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.ImgItem:hover {
+    opacity: 1;
+}

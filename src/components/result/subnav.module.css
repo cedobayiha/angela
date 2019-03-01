@@ -1,0 +1,15 @@
+.Breadcrumbs {
+    color: var(--gray);
+    font-size:14px;
+
+    display: none;
+    align-items:center;
+    margin-left: 20px;
+}
+
+@media (min-width: 768px) {
+    .Breadcrumbs {
+        display:flex;
+    }
+}
+

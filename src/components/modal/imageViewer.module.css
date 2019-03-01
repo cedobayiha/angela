@@ -1,0 +1,92 @@
+.Modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 999999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Modal::after {
+    content: '';
+    background-color: #000;
+    opacity: 0.75;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+
+.ModalContainer {
+    width: 100vw;
+    /*top:0;*/
+    transition: 0.5s all ease;
+    /*position: absolute;*/
+    z-index: 2;
+
+
+    height: 100vh;
+    position: relative;
+}
+
+.HomeAreaPicture {
+    padding: 2px 10px;
+    color: white;
+    border-radius: 2px;
+    font-size: 13px;
+    background-color: #4b5055;
+    opacity: .6;
+    cursor: pointer;
+}
+.HomeAreaPicture.Selected {
+    opacity: 1;
+}
+
+.HomeAreaPicture:hover {
+    opacity: 1;
+}
+
+.ImgThumbnail {
+    opacity: 0.5;
+    height: 75px;
+    min-width: 100px;
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.ImgThumbnail:hover {
+    opacity: 1;
+}
+
+
+
+.BottomContainer {
+    position:absolute;
+    bottom: 0;
+    height: 156px;
+    right:0;
+    width:100vw;
+    background-color:#0000007a
+}
+
+@media(max-width: 575px ) {
+    .BottomContainer {
+        display: none;
+    }
+}
+
+@media (min-width: 576px) {
+    .ImageViewContainer {
+        height:calc(100vh - 235px);
+    }
+}
+
+@media (max-width: 575px) {
+    .ImageViewContainer .container {
+        padding-right: 0 !important;
+    }
+}

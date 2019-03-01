@@ -1,11 +1,11 @@
 import React, {Component} from "react";
 import { Link } from 'react-router-dom'
-import "./nav.css"
-
+import classes from './nav.module.css'
+import { MenuIcon } from '../icons/icons'
 
 class Navbar extends Component {
     render() {
-        return (<>
+        return (
             <div>
                 <nav>
                     <div className="container" style={{
@@ -16,15 +16,18 @@ class Navbar extends Component {
                         height: 56
                     }}>
                         <div><strong>Angela</strong></div>
-                        <div>
+                        <div className={classes.NavLinks}>
+                            <div style={{display: "inline", marginRight: 16}}><Link to="/search">Search</Link></div>
                             <div style={{display: "inline", marginRight: 16}}><Link to="/result">Result</Link></div>
                             <div style={{display: "inline", marginRight: 16}}>Login</div>
                             <div style={{display: "inline"}}>Logout</div>
                         </div>
+                        <div className={classes.MobileIconToggle}>
+                            <MenuIcon/>
+                        </div>
                     </div>
                 </nav>
             </div>
-            </>
         );
     }
 }
