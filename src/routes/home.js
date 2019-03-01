@@ -1,5 +1,13 @@
 import React from 'react'
 
-const HomePage = () => <h1>Hello World</h1>
+import Slider from '../components/slider/slider'
+
+const HomePage = () => (
+    <div>
+        <Slider/>
+    </div>
+)
+
+
 
 export default HomePage
