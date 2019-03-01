@@ -6,7 +6,7 @@ import ImagesHeader from '../components/result/imagesHeader'
 import Email from '../components/Email'
 import Navv from '../components/result/navv'
 import MobileActions from '../components/result/mobileActions'
-
+import PostDescription from '../components/result/postDescription'
 
 const Result = () => (
     <div>
@@ -18,7 +18,7 @@ const Result = () => (
             <div className="container">
                 <div className="row">
                     <div className="col-12 col-lg-8">
-                        Right
+                        <PostDescription/>
                     </div>
                     <div className="col-12 col-lg-4">
                         <Email />
