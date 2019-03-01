@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
-import Slider from './components/slider/slider'
+import { Route } from 'react-router-dom'
+import HomePage from './routes/home'
 
 
 class App extends Component {
   render() {
     return (
-      <div >
+      <div>
+        <Route exact path="/" component={HomePage} />
 
-        <Slider/>
       </div>
     );
   }
