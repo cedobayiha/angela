@@ -1,10 +1,10 @@
 import React from 'react'
 import Img1 from '../../img/2018_09_06_12_05_12_20180830_aerial_v6_hd_horizontale.jpg'
-const Featured = () => {
+const RecentlyAdded = () => {
     return (
         <div>
             <div className="container">
-                <h3>Featured developments</h3>
+                <h3>Recently added</h3>
                 <div className="space10"/>
                 <div className="row">
                     <FeaturedItem />
@@ -22,9 +22,9 @@ const FeaturedItem = () => (
         <div style={{marginBottom: 8}}>
             <div style={{
                 minHeight: 160,
-            backgroundImage:`url(${Img1}`,
-            backgroundSize:'cover',
-            backgroundPosition:'center'}}
+                backgroundImage:`url(${Img1}`,
+                backgroundSize:'cover',
+                backgroundPosition:'center'}}
             />
             <div style={{padding: '8px 8px 16px'}}>
                 <div style={{fontSize:12, color:'var(--gray)', textTransform:'uppercase'}}>View Montreal</div>
@@ -35,4 +35,4 @@ const FeaturedItem = () => (
     </div>
 )
 
-export default Featured
+export default RecentlyAdded
